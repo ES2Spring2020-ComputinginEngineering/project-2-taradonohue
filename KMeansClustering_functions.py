@@ -18,6 +18,7 @@ def normalizeData(glucose, hemoglobin, classification):
     return normal_glucose, normal_hemoglobin, classification 
 
 def createCentroid(K):
+#This function comes from the starter code.
 #This creates random centroids to start the k means clustering process with. It takes the parameter k, the 
 #number of centroids to make, and returns the values of the centroids.
     the_centroids = np.random.random((K, 2))
@@ -25,6 +26,7 @@ def createCentroid(K):
     return the_centroids
 
 def assign(centroids, normal_glucose, normal_hemoglobin):
+#This function comes from the starter code.
 #This assigns every data point to the centroid that it is closest to. It takes in the centroids and the 
 #normalized data as parameters. It returns the assignment of every data point as an array.
     K = centroids.shape[0]
