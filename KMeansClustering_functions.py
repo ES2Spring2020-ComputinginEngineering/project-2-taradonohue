@@ -4,8 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 
-#CITE STARTER CODE!
-
 def openckdfile():
 #This takes in the data from the csv. It has no parameters, and returns glucose, hemoglobin, and classification.
     glucose, hemoglobin, classification = np.loadtxt('ckd.csv', delimiter=',', skiprows=1, unpack=True)
